@@ -1,0 +1,50 @@
+#include <stdio.h> 
+ /*wywo anie biblioteki*/
+
+void main()
+/*glowna funkcja programu */
+{
+
+char litera; /* deklaracja zmiennej i czyli nazwa typu zmiennej oraz jej nazwa*/
+char litera2;
+
+
+
+
+     printf("To jest pierwszy program\n");
+
+     printf("wczytujacy i wypisujacy 2 litery.\n");
+
+     printf("podaj 2 litery wciskaj c enter po pierwszej z nich.\n");
+
+
+
+     scanf("%c",&litera);
+     getchar();
+     scanf("%c",&litera2);
+
+/*
+
+* zwroc uwage na znak ampersant w wywolaniu funkcji scanf 
+
+* jest on niezbedny, gdyz funkcja scanf MODYFIKUJE warto   
+
+* zmiennej liczba. W tym celu musi mie  do niej dost p
+
+* i uzyskuje go przez ampersant. Dla odró nienia: funkcja
+
+* printf nie modyfikuje warto ci zmiennych wi c nie 
+
+* trzeba wpisywa  (i nie ma sensu ) ampersanta przed nazw 
+
+* zmiennej
+
+*/
+
+
+
+     printf("wypisuje liczbe ktora podales/las:");
+
+     printf("oto pierwsza: %c a to druga: %c",litera,litera2);
+
+}

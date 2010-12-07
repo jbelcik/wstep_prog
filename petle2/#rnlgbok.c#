@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+  int h;
+  int a;
+  int licz1;
+  int licz2;
+  int licz3;
+  int b;
+
+  licz1 = 0;
+  licz2 = 0;
+  licz3 = 0;
+  b = 0;
+
+  printf("Podaj wysokosc rownolegloboku:\n");
+  scanf("%d",&h);
+  printf("Podaj dlugosc podstawy rownolegloboku:\n");
+  scanf("%d",&a);
+
+  while (h>0)
+    {
+      while (licz2 < (a - h))
+	{
+	  printf(" ");
+	  licz2 = licz2 + 1;
+	}
+      while (licz3 < a)
+	{
+	  printf("*");
+	  licz3 = licz3 + 1;
+	}
+      printf("\n");
+      licz1 = licz1 + 1;
+      licz2 = 0;
+      licz3 = 0;
+    }
+
+return 0;
+
+}
