@@ -45,7 +45,7 @@ int main()
     tabx[i] = e;
   }
   
-  if (tabx[g - 1] == 0) g = g - 1;
+  if (tab[g - 1] == 0) g = g - 1;
 
   for (i = g - 1; i >= 0; i--) printf("%i", tabx[i]);
   
