@@ -14,7 +14,7 @@ int main ()
   float tab2[n];
   int x = 0;
     
-  printf("\n   Podaj kolejno wartosci elementow tablicy 1:\n",x);
+  printf("\n   Podaj kolejno wartosci elementow tablicy 1:\n");
     
   for (i = 0; i < n; i++)
   {
@@ -22,7 +22,7 @@ int main ()
     scanf("%f",&tab1[i]);
   }
 
-  printf("\n   Podaj kolejno wartosci elementow tablicy 2:\n",x);
+  printf("\n   Podaj kolejno wartosci elementow tablicy 2:\n");
          
   for (i = 0; i < n; i++) 
   {
@@ -35,34 +35,30 @@ int main ()
   do
   {
     if (tab1[i] == tab2[i])
-    {
-      i++;
-    }
     else
     {
       if (tab1[i] < tab2[i])
       {
         x = 1;
-        i++;
       }
       else
       {
         x = 2;
-        i++;
       }
     }
+    i++;
   }
   while (x == 0 && i < n);
 
-  if (x == 1)
+  if (x == 1 && n != 0)
   {
-    printf("\n   Tablica 1 poprzedza leksykograficznie tablice 2\n\n");
+    printf("\n   Tablica 1 poprzedza leksykograficznie tablice 2\n\n\n");
   }
   else
   {
-    if (x == 2)
+    if (x == 2 && n != 0)
     {
-      printf("\n   Tablica 2 poprzedza leksykograficznie tablice 1\n\n");
+      printf("\n   Tablica 2 poprzedza leksykograficznie tablice 1\n\n\n");
     }
     else
     {
