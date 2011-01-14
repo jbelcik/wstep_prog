@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+long silnia(int n)
+{
+  if (n == 0) return 1;
+  else return n*silnia(n - 1);
+}
+
+int main()
+{
+  int x;
+  long w;
+  
+  scanf("%i", &x);
+  
+  w = silnia(x);
+  
+  printf("%lf\n", w);
+  
+  return 0;
+}
